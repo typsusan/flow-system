@@ -1,0 +1,121 @@
+/* From Uiverse.io by Yaya12085 */
+.payment-main .plan {
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  padding: 10px;
+  background-color: #fff;
+  color: #697e91;
+  max-width: 220px;
+
+}
+
+.payment-main .plan strong {
+  font-weight: 600;
+  color: #425275;
+}
+
+.payment-main .plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #ecf0ff;
+  border-radius: 12px;
+  position: relative;
+}
+
+.payment-main .plan .pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bed6fb;
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #425475;
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.payment-main .plan .pricing small {
+  color: #707a91;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+.payment-main .plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #425675;
+}
+
+.payment-main .plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.payment-main .plan .info + * {
+  margin-top: 1rem;
+}
+
+.payment-main .plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-main .plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.payment-main .plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.payment-main .plan .features .icon {
+  background-color: #1FCAC5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.payment-main .plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.payment-main .plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.payment-main .plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.payment-main .plan .button {
+  background-color: #6558d3;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.payment-main .plan .button:hover, .plan .button:focus {
+  background-color: #4133B7;
+}

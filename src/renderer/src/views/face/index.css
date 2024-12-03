@@ -1,0 +1,37 @@
+.face-main{
+  width: 510px;
+  height: 500px;
+  background-color: white;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+  user-select: none;
+  -webkit-app-region: no-drag;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.faceMain{
+  margin-top: -70px;
+}
+
+.face-main .btn {
+  width: 10em;
+  height: 2.3em;
+  margin: 0.5em;
+  background: #151717;
+  color: white;
+  border: none;
+  border-radius: 0.325em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  bottom: 100px;
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Electron</title>
+  <!-- Content-Security-Policy -->
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="
+      default-src 'self';
+      script-src 'self' 'unsafe-eval' blob: https://unpkg.com;
+      style-src 'self' 'unsafe-inline';
+      img-src * data:;
+      connect-src 'self' blob: https://unpkg.com data:;
+      worker-src 'self' blob:;
+    "
+  />
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

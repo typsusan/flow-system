@@ -1,0 +1,104 @@
+.sidebar-main {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  position: relative;
+}
+.user-header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.user-header img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+}
+.user-username{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.user-balance{
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-balance img{
+  width: 25px;
+  height: 25px;
+  -webkit-app-region: no-drag;
+}
+
+.user-balance p{
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.function-list{
+  width: 82%;
+  height: auto;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.function-list-item {
+  width: 100%;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  display: flex;
+  justify-content: left; /* 或 flex-start */
+  align-items: center;
+  position: relative; /* 确保伪元素定位正常 */
+  overflow: hidden; /* 避免伪元素超出容器 */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.function-list-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit; /* 继承背景色 */
+  filter: blur(10px); /* 模糊效果 */
+  z-index: 1; /* 伪元素在底层 */
+}
+.function-list-item img,
+.function-list-item p {
+  position: relative; /* 保证子元素在伪元素之上 */
+  z-index: 2; /* 子元素层级高于伪元素 */
+}
+.function-list-item img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+
+.function-list-item p {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: -2px;
+}
+
+.function-list-item:hover{
+  color: #247eff;
+}
+
+.fun-item-p-selected{
+  color: #247eff;
+}
+
+.fun-item-p-default{
+  color: #94a9c1;
+}

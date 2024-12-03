@@ -1,0 +1,95 @@
+.title-bar {
+  position: relative; /* 为定位子元素提供参照 */
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  -webkit-app-region: drag;
+  user-select: none;
+  overflow: hidden; /* 防止内容溢出 */
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+
+.title-bar-left,.title-bar-right{
+  width: 25%;
+  height: 45px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.title-bar-left img{
+  margin-left: 10px;
+}
+
+.title-bar-right{
+  width: 75%;
+  float: right;
+  display: flex;
+  justify-content: right;
+  background-color: white;
+}
+
+
+.title-bar .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.title-bar .title {
+  flex-grow: 1;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-app-region: drag;
+  color: #151717;
+  font-size: 13px;
+  margin-top: -2px;
+}
+
+.title-bar .operating-button {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+  border-radius: 50%;
+  background-color: var(--button-bg);
+  margin-right: 8px;
+}
+
+.title-bar .operating-button img {
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.title-bar .operating-button:hover img {
+  opacity: 1;
+}
+
+.title-bar .close-button {
+  --button-bg: #f56057;
+}
+
+.title-bar .minimum-button {
+  --button-bg: #fec428;
+}
+
+.title-bar .expand-button {
+  --button-bg: #1fd42a;
+}
