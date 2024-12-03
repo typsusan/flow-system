@@ -21,7 +21,7 @@
     "@electron-toolkit/utils": "^2.0.0",
     "axios": "^1.7.8",
     "element-plus": "^2.8.8",
-    "face-effet": "^1.5.4",
+    "face-effet": "^1.5.5",
     "typeface-roboto": "^1.1.13",
     "vue-router": "^4.5.0"
   },

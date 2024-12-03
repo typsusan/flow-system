@@ -26,14 +26,10 @@ export default {
     }
   },
   mounted() {
-    try {
-      this.faceEffet.restart();
-    }catch (e) {
-      this.faceEffet.init({
-        el:'faceMain',
-        callBack:this.callBack
-      })
-    }
+    this.faceEffet.init({
+      el:'faceMain',
+      callBack:this.callBack
+    })
   },
   methods:{
     callBack(data){
